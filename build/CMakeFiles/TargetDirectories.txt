@@ -1,0 +1,3 @@
+/home/jio/workspace/snake/build/CMakeFiles/rebuild_cache.dir
+/home/jio/workspace/snake/build/CMakeFiles/Snake.dir
+/home/jio/workspace/snake/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/jio/workspace/snake/build",
+  "command": "/usr/bin/clang++   -I/home/jio/workspace/snake/SFML_INCLUDE_DIR -I/home/jio/workspace/snake/include -isystem /home/jio/.local/include/sfml/include    -std=gnu++14 -o CMakeFiles/Snake.dir/src/main.cpp.o -c /home/jio/workspace/snake/src/main.cpp",
+  "file": "/home/jio/workspace/snake/src/main.cpp"
+},
+{
+  "directory": "/home/jio/workspace/snake/build",
+  "command": "/usr/bin/clang++   -I/home/jio/workspace/snake/SFML_INCLUDE_DIR -I/home/jio/workspace/snake/include -isystem /home/jio/.local/include/sfml/include    -std=gnu++14 -o CMakeFiles/Snake.dir/src/food.cpp.o -c /home/jio/workspace/snake/src/food.cpp",
+  "file": "/home/jio/workspace/snake/src/food.cpp"
+},
+{
+  "directory": "/home/jio/workspace/snake/build",
+  "command": "/usr/bin/clang++   -I/home/jio/workspace/snake/SFML_INCLUDE_DIR -I/home/jio/workspace/snake/include -isystem /home/jio/.local/include/sfml/include    -std=gnu++14 -o CMakeFiles/Snake.dir/src/snake.cpp.o -c /home/jio/workspace/snake/src/snake.cpp",
+  "file": "/home/jio/workspace/snake/src/snake.cpp"
+}
+]
