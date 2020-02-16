@@ -7,6 +7,7 @@
 #include <iostream>
 
 
+#define MAX_FPS 20
 #define DEFAULT_GRID_SIZE 10
 #define DEFAULT_DIM_X 640
 #define DEFAULT_DIM_Y 480
@@ -55,7 +56,9 @@ void run(){
     Snake s = Snake(grid_size, dimension_x, dimension_y);
     sf::RectangleShape snek(sf::Vector2f(grid_size, grid_size));
     snek.setFillColor(sf::Color::Green);
-    window.setFramerateLimit(15);
+
+    int curr_fps = 5;
+    window.setFramerateLimit(curr_fps);
     
     sf::RectangleShape froot(sf::Vector2f(grid_size, grid_size));
     froot.setFillColor(sf::Color::Red);
@@ -110,6 +113,10 @@ void run(){
             s.eat();
             fruit.reset();
             eaten++;
+            if(curr_fps < MAX_FPS){
+                curr_fps = 5 + eaten/5;
+                window.setFramerateLimit(curr_fps);
+            }
         }
 // Draws the snake.
         window.clear();
@@ -124,6 +131,7 @@ void run(){
             snek.setPosition(it->x, it->y);
             window.draw(snek);
         }
+
 
 
         window.display();
